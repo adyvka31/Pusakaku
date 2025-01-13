@@ -24,3 +24,81 @@ body {
   width: 99%;
   left: 0;
 }
+
+/* HOVER IMAGE */
+
+.slide-right{
+  animation: slide-right 18s infinite linear;
+}
+
+.slide-left{
+  animation: slide-left 18s infinite linear;
+}
+
+.carousel:hover .carousel-content {
+  animation-play-state: paused;
+}
+
+.image-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.overlay-text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.overlay-description {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
