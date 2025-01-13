@@ -204,14 +204,6 @@ img {
 
   
 
-.bg-hero{
-  background-image: url(Images/background-hero.png);
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-
 
 :root {
   --d: 700ms;
@@ -315,19 +307,19 @@ img {
 }
 
 .cardd:nth-child(1):before {
-  background-image: url('https://i.pinimg.com/564x/6c/12/28/6c122862da2521606b4e59043d9847f8.jpg');
+  background-image: url('Image/congklak.jpg');
 }
 
 .cardd:nth-child(2):before {
-  background-image: url('https://i.pinimg.com/564x/ae/84/20/ae8420bd65f663a913099399cf44c907.jpg');
+  background-image: url('Image/layang-layang.jpg');
 }
 
 .cardd:nth-child(3):before {
-  background-image: url('https://i.pinimg.com/564x/a6/6f/a2/a66fa211d64a5b8c24ff189a7d071a45.jpg');
+  background-image: url('https://i.pinimg.com/736x/0c/13/e0/0c13e06b87517b2df2e62e2c1344d80c.jpg');
 }
 
 .cardd:nth-child(4):before {
-  background-image: url('https://i.pinimg.com/564x/51/87/aa/5187aadb8f20ae85a8a9a20eb54aa232.jpg');
+  background-image: url('https://i.pinimg.com/736x/84/62/e9/8462e9b7b041c2ef852ec383f1049c33.jpg');
 }
 
 .content {
