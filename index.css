@@ -1,0 +1,26 @@
+@font-face 
+{
+  font-family: 'Yogyakarta';
+  src: url('Font/Yogyakarta.ttf');
+}
+
+body {
+  background-color: #F5EFDA;
+}
+
+.garis::after {
+  content: "";
+  height: 1.5px;
+  width: 0;
+  background: #5D8736;
+  color: #5D8736;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transition: 0.3s ease-in-out;
+}
+
+.garis:hover::after {
+  width: 99%;
+  left: 0;
+}
