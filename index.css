@@ -212,35 +212,6 @@ img {
   width: 100%;
 }
 
-.javaisland{
-    background: #D2FF72;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 200px #D2FF72;
-}
-
-.javaisland2{
-  background: linear-gradient(to right, #15B392, #159378);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 200px #15B392;
-}
-
-.garis::after {
-    content: "";
-    height: 1.5px;
-    width: 0;
-    background: #D2FF72;
-    color: #D2FF72;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s ease-in-out;
-}
-  
-.garis:hover::after {
-    width: 99%;
-}
 
 :root {
   --d: 700ms;
