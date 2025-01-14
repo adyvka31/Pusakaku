@@ -14,11 +14,11 @@
 
     <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO -->
 
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container mx-auto px-4 py-8">
         <div class="text-center mb-14">
-          <img src="Image/hero-left.png" class="w-40 absolute left-0" />
-          <img src="Image/hero-right.png" class="w-40 absolute right-0" />
+          <img src="Image/hero-left.png" class="w-40 absolute left-0 top-4" />
+          <img src="Image/hero-right.png" class="w-40 absolute right-0 top-4" />
           <div
             class="text-[#5D8736] text-[70px] tracking-wide font-['Yogyakarta']"
           >
@@ -27,10 +27,10 @@
           <div
             class="flex text-sm font-medium justify-center space-x-6 text-[#5D8736] mt-3"
           >
-            <a href="#" class="relative garis">TENTANG KAMI</a>
-            <a href="#" class="relative garis">PUSAKA PERMAINAN</a>
-            <a href="#" class="relative garis">PENGINGAT</a>
-            <a href="#" class="relative garis">ACARA PUSAKA</a>
+            <a href="#about" class="relative garis">TENTANG KAMI</a>
+            <a href="#permainan" class="relative garis">PUSAKA PERMAINAN</a>
+            <a href="#game" class="relative garis">PENGINGAT</a>
+            <a href="#acara" class="relative garis">ACARA PUSAKA</a>
           </div>
         </div>
 
@@ -64,7 +64,7 @@
                   class="image-container ring-2 ring-green-700 relative w-96 h-80 rounded-lg shadow-lg overflow-hidden hover:scale-110 duration-700"
                 >
                   <img
-                    src="https://img.merahputih.com/media/ce/ef/d7/ceefd7b155dc0d0ac0bf098695a08b6b.jpg"
+                    src="https://i0.wp.com/archipelagoid.com/wp-content/uploads/2024/06/Cara-Bermain-Ketapel.webp?resize=700%2C350&ssl=1"
                     alt="Image 2"
                     class="w-full ring-2 ring-green-800 h-full object-cover"
                   />
@@ -202,9 +202,9 @@
           </p>
         </div>
 
-        <div class="w-full flex justify-center h-44 items-center">
+        <div class="w-full flex justify-center h-44 -mb-44 items-center">
           <a
-            href="#"
+            href="#about"
             class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 animate-bounce ring-2 ring-[#F5EFDA]"
           >
             <span
@@ -239,12 +239,12 @@
 
     <!-- ABOUT --> <!-- ABOUT --> <!-- ABOUT --> <!-- ABOUT -->
 
-    <section class="bg-[#5D8736] z-10 body-font">
+    <section class="bg-[#5D8736] my-44 z-10 body-font" id="about">
       <div
         class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
       >
         <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center fadeinrightup"
         >
           <h1
             class="sm:text-7xl text-7xl mb-4 font-medium text-[#F5EFDA] font-['Yogyakarta']"
@@ -272,7 +272,7 @@
             </a>
           </div>
         </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 fadeinleftup">
           <img
             class="object-cover object-center rounded"
             alt="hero"
@@ -282,14 +282,14 @@
       </div>
     </section>
 
-    <!-- PUSAKA --> <!-- PUSAKA --> <!-- PUSAKA --> <!-- PUSAKA -->
+    <!-- PERMAINAN --> <!-- PERMAINAN --> <!-- PERMAINAN --> <!-- PERMAINAN -->
 
-    <section class="py-40">
+    <section class="" id="permainan">
       <div>
         <img src="Image/hero-left.png" class="w-40 absolute left-0" />
         <img src="Image/hero-right.png" class="w-40 absolute right-0" />
         <div
-          class="text-[#5D8736] text-center text-[70px] tracking-wide font-['Yogyakarta']"
+          class="text-[#5D8736] text-center text-[70px] tracking-wide font-['Yogyakarta'] fadeinup2"
         >
           Pusaka Permainan
         </div>
@@ -302,27 +302,27 @@
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Gunung
+            Sulawesi
           </button>
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Desa Wisata
+            Lampung
           </button>
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Tempat Bersejarah
+            Yogyakarta
           </button>
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Menara
+            Jawa Tengah
           </button>
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Air Terjun
+            Padang
           </button>
         </div>
         <div
@@ -331,27 +331,27 @@
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Danau & Kawah
+            Jawa Barat
           </button>
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Pantai
+            Riau
           </button>
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Kota Tua
+            Kalimantan
           </button>
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Taman Nasional
+            Nusa Tenggara Timur
           </button>
           <button
             class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-white duration-300 text-base rounded-xl"
           >
-            Keraton
+            Bali
           </button>
         </div>
       </section>
@@ -412,9 +412,9 @@
       </section>
     </section>
 
-    <!-- PERMAINAN --> <!-- PERMAINAN --> <!-- PERMAINAN --> <!-- PERMAINAN -->
+    <!-- GAME --> <!-- GAME --> <!-- GAME --> <!-- GAME -->
 
-    <section class="bg-white w-full py-28 border-t-2 border-[#5D8736]">
+    <section class="bg-white w-full py-28 mt-44 border-t-2 border-[#5D8736]" id="game">
       <h1
         class="sm:text-7xl text-7xl font-medium text-[#5D8736] font-['Yogyakarta'] text-center mb-16"
       >
@@ -444,5 +444,8 @@
         Acara Pusaka
       </h1>
     </section>
+
+    <!-- ACARA --> <!-- ACARA --> <!-- ACARA --> <!-- ACARA -->
+
   </body>
 </html>
