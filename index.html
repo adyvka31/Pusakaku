@@ -24,18 +24,20 @@
     <section class="hero" id="hero">
       <div class="container mx-auto px-4 py-8">
         <div class="text-center mb-14">
-          <img src="Image/hero-left.png" class="w-40 absolute left-0 top-4" />
-          <img src="Image/hero-right.png" class="w-40 absolute right-0 top-4" />
+          <img src="Image/hero-left.png" class="max-[767px]:w-20 sm:w-36 md:w-40 absolute left-0 top-4" />
+          <img src="Image/hero-right.png" class="max-[767px]:w-20 sm:w-36 md:w-40 absolute right-0 top-4" />
           <div
-            class="text-[#5D8736] text-[70px] tracking-wide font-['Yogyakarta'] flex justify-center gap-1"
+            class="text-[#5D8736] max-[767px]:text-[30px] sm:text-[50px] md:text-[70px] tracking-wide font-['Yogyakarta'] flex justify-center gap-1"
           >
             PusakaKu
             <span class="text-6xl cursor-grab" id="logo-icon"
-              ><img src="Image/logo pusakaku.png" class="h-20 w-20" alt=""
+              ><img src="Image/logo pusakaku.png" class="md:h-20 md:w-20 sm:h-14 sm:w-14 max-[767px]:w-10 max-[767px]:h-10" alt=""
             /></span>
           </div>
+
+          <!-- NAV BIASA -->  <!-- NAV BIASA -->  <!-- NAV BIASA -->  <!-- NAV BIASA -->  <!-- NAV BIASA -->  <!-- NAV BIASA --> 
           <div
-            class="flex text-sm font-medium justify-center space-x-6 text-[#5D8736] mt-3"
+            class="max-[767px]:hidden md:flex text-sm font-medium justify-center space-x-6 text-[#5D8736] mt-3"
           >
             <a href="#about" class="relative garis font-semibold"
               >TENTANG KAMI</a
@@ -48,7 +50,35 @@
               >ACARA PUSAKA</a
             >
           </div>
-        </div>
+
+          <!-- NAV MOBILE --> <!-- NAV MOBILE --> <!-- NAV MOBILE --> <!-- NAV MOBILE --> <!-- NAV MOBILE --> <!-- NAV MOBILE --> 
+          <div 
+            class="navslide max-[767px]:flex md:hidden">
+
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg>
+              </button>
+              
+              <!-- Dropdown menu -->
+              <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                    </li>
+                  </ul>
+              </div>
+  
+          </div>
 
         <section class="">
           <div class="mb-5 w-full">
@@ -251,7 +281,7 @@
             </span>
           </a>
         </div>
-      </section>
+    </section>
 
         <!-- ABOUT -->
         <!-- ABOUT -->
