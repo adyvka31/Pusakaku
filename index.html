@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,8 +11,8 @@
 
   <style>
     html {
-            scroll-behavior: smooth;
-        }
+      scroll-behavior: smooth;
+    }
   </style>
 
   <body>
@@ -33,10 +32,16 @@
           <div
             class="flex text-sm font-medium justify-center space-x-6 text-[#5D8736] mt-3"
           >
-            <a href="#about" class="relative garis font-semibold">TENTANG KAMI</a>
-            <a href="#permainan" class="relative garis font-semibold">PUSAKA PERMAINAN</a>
+            <a href="#about" class="relative garis font-semibold"
+              >TENTANG KAMI</a
+            >
+            <a href="#permainan" class="relative garis font-semibold"
+              >PUSAKA PERMAINAN</a
+            >
             <a href="#game" class="relative garis font-semibold">PENGINGAT</a>
-            <a href="#acara" class="relative garis font-semibold">ACARA PUSAKA</a>
+            <a href="#acara" class="relative garis font-semibold"
+              >ACARA PUSAKA</a
+            >
           </div>
         </div>
 
@@ -199,15 +204,21 @@
           </div>
         </section>
 
-        <div class="text-center font-serif font-medium mx-36 p-2  text-[#5D8736]">
+        <div
+          class="text-center font-serif font-medium mx-36 p-2 text-[#5D8736]"
+        >
           <p>
-            "Permainan tradisional Indonesia bukan hanya sekadar aktivitas untuk mengisi waktu luang, melainkan juga warisan budaya yang kaya akan nilai-nilai kehidupan. Dari congklak yang mengajarkan kesabaran dan strategi, hingga gasing yang melambangkan ketekunan dan keseimbangan"
+            "Permainan tradisional Indonesia bukan hanya sekadar aktivitas untuk
+            mengisi waktu luang, melainkan juga warisan budaya yang kaya akan
+            nilai-nilai kehidupan. Dari congklak yang mengajarkan kesabaran dan
+            strategi, hingga gasing yang melambangkan ketekunan dan
+            keseimbangan"
           </p>
         </div>
 
         <div class="w-full flex justify-center h-44 -mb-44 items-center">
           <a
-            href="#about" 
+            href="#about"
             class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 animate-bounce ring-2 ring-[#F5EFDA]"
           >
             <span
@@ -238,29 +249,268 @@
           </a>
         </div>
 
-    
-    </section>
+        <!-- ABOUT --> <!-- ABOUT --> <!-- ABOUT --> <!-- ABOUT -->
 
-    <!-- ABOUT --> <!-- ABOUT --> <!-- ABOUT --> <!-- ABOUT -->
+        <section class="bg-[#5D8736] my-44 z-10 body-font" id="about">
+          <div
+            class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+          >
+            <div
+              class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center fadeinrightup"
+            >
+              <h1
+                class="sm:text-7xl text-7xl mb-4 font-medium text-[#F5EFDA] font-['Yogyakarta']"
+              >
+                Tentang Kami
+              </h1>
+              <p class="mb-8 text-[#F5EFDA] leading-relaxed">
+                Dengan pesatnya perkembangan teknologi, budaya permainan
+                tradisional Indonesia banyak sekali yang terlupakan. Oleh sebab
+                itu, Pusakaku adalah platform untuk mengenalkan permainan
+                tradisional di Indonesia dan mempertahankan budaya yang ada di
+                Indonesia
+              </p>
+              <div class="flex justify-center">
+                <a
+                  href="#about"
+                  data-modal-target="static-modal"
+                  data-modal-toggle="static-modal"
+                  type="button"
+                  class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
+                >
+                  <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+                  ></span>
+                  <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+                  ></span>
+                  <span class="relative text-[#F5EFDA]">Selengkapnya</span>
+                </a>
+              </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 fadeinleftup">
+              <img
+                class="object-cover object-center rounded"
+                alt="hero"
+                src="Image/mainan-1.png"
+              />
+            </div>
+          </div>
+          <div
+            id="static-modal"
+            data-modal-backdrop="static"
+            tabindex="-1"
+            aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+              <div
+                class="relative bg-white rounded-lg shadow dark:bg-[#5D8736]"
+              >
+                <div
+                  class="flex items-center justify-between p-4 md:p-5 border-b rounded-t"
+                >
+                  <h1
+                    class="sm:text-5xl text-5xl pt-2 font-medium text-[#F5EFDA] font-['Yogyakarta']"
+                  >
+                    Tentang Kami
+                  </h1>
+                  <button
+                    type="button"
+                    class="text-[#F5EFDA] bg-transparent hover:bg-[#F5EFDA] hover:text-[#5D8736] rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                    data-modal-hide="static-modal"
+                  >
+                    <svg
+                      class="w-3 h-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                      />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                  <p class="text-[#F5EFDA] leading-normal">
+                    Dengan pesatnya perkembangan teknologi, budaya permainan
+                    tradisional Indonesia banyak sekali yang terlupakan. Oleh
+                    sebab itu, Pusakaku adalah platform untuk mengenalkan
+                    permainan tradisional di Indonesia dan mempertahankan budaya
+                    yang ada di Indonesia. <br />
+                    <br />
+                    Kami menyediakan website yang dapat digunakan oleh seluruh
+                    masyarakat Indonesia dan dunia untuk mempertahankan
+                    kebudayaan negara kita, Indonesia. Di sini, banyak sekali
+                    permainan tradisional Indonesia yang terlupakan oleh kita
+                    semua. Kami harap, dengan adanya website Pusakaku bisa
+                    mempertahankan kebudayaan tradisional Indonesia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <section class="bg-[#5D8736] my-44 z-10 body-font" id="about">
-      <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-      >
-        <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center fadeinrightup"
+        <!-- PERMAINAN --> <!-- PERMAINAN --> <!-- PERMAINAN --> <!-- PERMAINAN -->
+
+        <section class="" id="permainan">
+          <div>
+            <img src="Image/hero-left.png" class="w-40 absolute left-0" />
+            <img src="Image/hero-right.png" class="w-40 absolute right-0" />
+            <div
+              class="text-[#5D8736] text-center text-[70px] tracking-wide font-['Yogyakarta'] fadeinup2"
+            >
+              Pusaka Permainan
+            </div>
+          </div>
+
+          <section class="container mx-auto text-center mt-14 mb-24">
+            <div
+              class="mt-6 space-x-4 flex justify-center flex-wrap gap-1 fadeinup2"
+            >
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Sulawesi
+              </button>
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Lampung
+              </button>
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Yogyakarta
+              </button>
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Jawa Tengah
+              </button>
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Padang
+              </button>
+            </div>
+            <div
+              class="mt-4 space-x-4 flex justify-center flex-wrap gap-1 fadeinup2"
+            >
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Jawa Barat
+              </button>
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Riau
+              </button>
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Kalimantan
+              </button>
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Nusa Tenggara Timur
+              </button>
+              <button
+                class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
+              >
+                Bali
+              </button>
+            </div>
+          </section>
+
+          <section class="text-gray-600 body-font">
+            <div class="container max-[767px]:pt-32 mx-auto"></div>
+            <div class="container flex flex-wrap px-5 mx-auto items-center">
+              <main class="page-content">
+                <div class="cardd rounded-lg fadeinrightup">
+                  <div class="content">
+                    <h2 class="title">Congklak</h2>
+                    <p class="copy">
+                      Congklak adalah suatu permainan tradisional yang dikenal
+                      dengan berbagai macam nama di seluruh Indonesia.
+                    </p>
+                    <a href="detailgudeg.html">
+                      <button class="btn">Lebih Lengkap</button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="cardd rounded-lg fadeinrightup">
+                  <div class="content">
+                    <h2 class="title">Layang-Layang</h2>
+                    <p class="copy">
+                      Layang-layang, atau biasa disebut sebagai layangan atau
+                      wau, merupakan sebuah mainan tradisional yang berasal dari
+                      Indonesia.
+                    </p>
+                    <a href="detailsotokudus.html">
+                      <button class="btn">Lebih Lengkap</button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="cardd rounded-lg fadeinleftup">
+                  <div class="content">
+                    <h2 class="title">Egrang</h2>
+                    <p class="copy">
+                      Egrang adalah sebuah permainan tradisional asal Jawa yang
+                      dibuat khusus dengan sepasang bambu untuk berjalan.
+                    </p>
+                    <a href="detailrawon.html">
+                      <button class="btn">Lebih Lengkap</button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="cardd rounded-lg fadeinleftup max-[767px]:hidden">
+                  <div class="content">
+                    <h2 class="title">Kelereng</h2>
+                    <p class="copy">
+                      Kelereng adalah bola berukuran kecil yang terbuat dari
+                      tanah liat, pualam atau kaca untuk digunakan dalam
+                      permainan anak-anak.
+                    </p>
+                    <a href="detaillontong.html">
+                      <button class="btn">Lebih Lengkap</button>
+                    </a>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </section>
+        </section>
+
+        <!-- GAME --> <!-- GAME --> <!-- GAME --> <!-- GAME -->
+
+        <section
+          class="bg-white w-full py-28 mt-44 border-t-2 border-[#5D8736]"
+          id="game"
         >
           <h1
-            class="sm:text-7xl text-7xl mb-4 font-medium text-[#F5EFDA] font-['Yogyakarta']"
+            class="sm:text-7xl text-7xl font-medium text-[#5D8736] font-['Yogyakarta'] text-center mb-16"
           >
-            Tentang Kami
+            Game <br />
+            Pengingat
           </h1>
-          <p class="mb-8 text-[#F5EFDA] leading-relaxed">
-            Dengan pesatnya perkembangan teknologi, budaya permainan tradisional Indonesia banyak sekali yang terlupakan. Oleh sebab itu, Pusakaku adalah platform untuk mengenalkan permainan tradisional di Indonesia dan mempertahankan budaya yang ada di Indonesia
-          </p>
           <div class="flex justify-center">
             <a
-              href="#about" data-modal-target="static-modal" data-modal-toggle="static-modal" type="button"
+              href="#"
               class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
             >
               <span
@@ -269,425 +519,383 @@
               <span
                 class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
               ></span>
-              <span class="relative text-[#F5EFDA]">Selengkapnya</span>
+              <span class="relative text-[#F5EFDA]">Mulai Game</span>
             </a>
           </div>
-        </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 fadeinleftup">
-          <img
-            class="object-cover object-center rounded"
-            alt="hero"
-            src="Image/mainan-1.png"
-          />
-        </div>
-      </div>
-      <!-- POP UP -->
-      <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative p-4 w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-[#5D8736]">
-                <!-- Modal header -->
-                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                    <h1
-                            class="sm:text-5xl text-5xl pt-2 font-medium text-[#F5EFDA] font-['Yogyakarta']"
-                        >
-                            Tentang Kami
-                        </h1>
-                    <button type="button" class="text-[#F5EFDA] bg-transparent hover:bg-[#F5EFDA] hover:text-[#5D8736]  rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-hide="static-modal">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                        <span class="sr-only">Close modal</span>
-                    </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-4 md:p-5 space-y-4">
-                    <p class=" text-[#F5EFDA]  leading-normal">
-                        Dengan pesatnya perkembangan teknologi, budaya permainan tradisional Indonesia banyak sekali yang terlupakan. Oleh sebab itu, Pusakaku adalah platform untuk mengenalkan permainan tradisional di Indonesia dan mempertahankan budaya yang ada di Indonesia. <br> <br> Kami menyediakan website yang dapat digunakan oleh seluruh masyarakat Indonesia dan dunia untuk mempertahankan kebudayaan negara kita, Indonesia.  Di sini, banyak sekali permainan tradisional Indonesia yang terlupakan oleh kita semua. Kami harap, dengan adanya website Pusakaku bisa mempertahankan kebudayaan tradisional Indonesia.
+        </section>
 
-                      </p>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-  </div>
-    </section>
+        <!-- ACARA --> <!-- ACARA --> <!-- ACARA --> <!-- ACARA -->
 
-    <!-- PERMAINAN --> <!-- PERMAINAN --> <!-- PERMAINAN --> <!-- PERMAINAN -->
-
-    <section class="" id="permainan">
-      <div>
-        <img src="Image/hero-left.png" class="w-40 absolute left-0" />
-        <img src="Image/hero-right.png" class="w-40 absolute right-0" />
-        <div
-          class="text-[#5D8736] text-center text-[70px] tracking-wide font-['Yogyakarta'] fadeinup2"
-        >
-          Pusaka Permainan
-        </div>
-      </div>
-
-      <section class="container mx-auto text-center mt-14 mb-24">
-        <div
-          class="mt-6 space-x-4 flex justify-center flex-wrap gap-1 fadeinup2"
-        >
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Sulawesi
-          </button>
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Lampung
-          </button>
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Yogyakarta
-          </button>
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Jawa Tengah
-          </button>
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Padang
-          </button>
-        </div>
-        <div
-          class="mt-4 space-x-4 flex justify-center flex-wrap gap-1 fadeinup2"
-        >
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Jawa Barat
-          </button>
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Riau
-          </button>
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Kalimantan
-          </button>
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Nusa Tenggara Timur
-          </button>
-          <button
-            class="px-7 py-2 border-2 border-solid border-[#5D8736] hover:bg-[#5D8736] hover:text-[#f5efda] text-[#5D8736] duration-300 text-base rounded-xl"
-          >
-            Bali
-          </button>
-        </div>
-      </section>
-
-      <section class="text-gray-600 body-font">
-        <div class="container max-[767px]:pt-32 mx-auto"></div>
-        <div class="container flex flex-wrap px-5 mx-auto items-center">
-          <main class="page-content">
-            <div class="cardd rounded-lg fadeinrightup">
-              <div class="content">
-                <h2 class="title">Congklak</h2>
-                <p class="copy">
-                  Congklak adalah suatu permainan tradisional yang dikenal dengan berbagai macam nama di seluruh Indonesia.
-                </p>
-                <a href="detailgudeg.html">
-                  <button class="btn">Lebih Lengkap</button>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardd rounded-lg fadeinrightup">
-              <div class="content">
-                <h2 class="title">Layang-Layang</h2>
-                <p class="copy">
-                  Layang-layang, atau biasa disebut sebagai layangan atau wau, merupakan sebuah mainan tradisional yang berasal dari Indonesia.
-                </p>
-                <a href="detailsotokudus.html">
-                  <button class="btn">Lebih Lengkap</button>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardd rounded-lg fadeinleftup">
-              <div class="content">
-                <h2 class="title">Egrang</h2>
-                <p class="copy">
-                  Egrang adalah sebuah permainan tradisional asal Jawa yang dibuat khusus dengan sepasang bambu untuk berjalan.
-                </p>
-                <a href="detailrawon.html">
-                  <button class="btn">Lebih Lengkap</button>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardd rounded-lg fadeinleftup max-[767px]:hidden">
-              <div class="content">
-                <h2 class="title">Kelereng</h2>
-                <p class="copy">
-                  Kelereng adalah bola berukuran kecil yang terbuat dari tanah liat, pualam atau kaca untuk digunakan dalam permainan anak-anak.
-                </p>
-                <a href="detaillontong.html">
-                  <button class="btn">Lebih Lengkap</button>
-                </a>
-              </div>
-            </div>
-          </main>
-        </div>
-      </section>
-    </section>
-
-    <!-- GAME --> <!-- GAME --> <!-- GAME --> <!-- GAME -->
-
-    <section class="bg-white w-full py-28 mt-44 border-t-2 border-[#5D8736]" id="game">
-      <h1
-        class="sm:text-7xl text-7xl font-medium text-[#5D8736] font-['Yogyakarta'] text-center mb-16"
-      >
-        Game <br />
-        Pengingat
-      </h1>
-      <div class="flex justify-center">
-        <a
-          href="#"
-          class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
-        >
-          <span
-            class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
-          ></span>
-          <span
-            class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
-          ></span>
-          <span class="relative text-[#F5EFDA]">Mulai Game</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ACARA --> <!-- ACARA --> <!-- ACARA --> <!-- ACARA -->
-    <section class="bg-[#5D8736] w-full">
-        
-        <div class="pt-20">
+        <section class="bg-[#5D8736] w-full">
+          <div class="pt-20">
             <img src="Image/art-kanan-creme.png" class="w-40 absolute left-0" />
-          <img src="Image/art-kiri-creme.png" class="w-40 absolute right-0" />
-          <div
-          class="text-[#F5EFDA] text-center text-[70px] tracking-wide font-['Yogyakarta']"
-        >
-          Acara Pusaka
-        </div>
-        </div>
+            <img src="Image/art-kiri-creme.png" class="w-40 absolute right-0" />
+            <div
+              class="text-[#F5EFDA] text-center text-[70px] tracking-wide font-['Yogyakarta']"
+            >
+              Acara Pusaka
+            </div>
+          </div>
 
-        <div class="container px-5 py-24 mx-auto">
+          <div class="container px-5 py-24 mx-auto">
             <div id="wrapercard" class="flex flex-wrap -m-4">
-
-
               <div class="cardtri p-4 md:w-1/3">
-                <div class="h-full border-2 border-[#5D8736] duration-700 bg-[#F5EFDA] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300" src="https://lensanusantara.co.id/wp-content/uploads/2023/10/IMG-20231025-WA0015.jpg" alt="blog">
+                <div
+                  class="h-full border-2 border-[#5D8736] duration-700 bg-[#F5EFDA] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden"
+                >
+                  <div class="relative">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300"
+                      src="https://lensanusantara.co.id/wp-content/uploads/2023/10/IMG-20231025-WA0015.jpg"
+                      alt="blog"
+                    />
+                    <div id="pembungkus">
+                      <p>Jakarta Pusat</p>
+                    </div>
+                  </div>
                   <div class="p-6">
-                    <h1 class=" sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start">Festival Permainan</h1>
-                         
-                      
-                      
-                      
-                      <div class="flex gap-5">
-                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Tanggal 🗓️ <br> <span class="font-semibold text-lg" >08/12/2024</span></h3>
-                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Waktu ⏰ WIB <br> <span class="font-semibold text-lg" >07:00-10:00 </span></h3>
-                      </div>
-                      <p class=" mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed  antialiased">
-                        Sebuah festival yang mengangkat permainan tradisional dari berbagai daerah di Indonesia
-                      </p>
+                    <h1
+                      class="sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start"
+                    >
+                      Festival Permainan
+                    </h1>
+
+                    <div class="flex gap-5">
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Tanggal 🗓️ <br />
+                        <span class="font-semibold text-lg">08/12/2024</span>
+                      </h3>
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Waktu ⏰ WIB <br />
+                        <span class="font-semibold text-lg">07:00-10:00 </span>
+                      </h3>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="#"
-                        class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA] ">
-                        <span
-                            class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736] "></span>
-                        <span
-                            class="absolute bottom-0 right-0 block w-64 h-64  mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                        <span class="relative text-[#F5EFDA]">Daftar Sekarang!</span>
-                          </span>
+                    <p
+                      class="mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed antialiased"
+                    >
+                      Sebuah festival yang mengangkat permainan tradisional dari
+                      berbagai daerah di Indonesia
+                    </p>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
+                    >
+                      <span
+                        class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+                      ></span>
+                      <span
+                        class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+                      ></span>
+                      <span class="relative text-[#F5EFDA]"
+                        >Daftar Sekarang!</span
+                      >
                     </a>
-                    </div>
+                  </div>
                 </div>
               </div>
 
               <!-- Batas Card -->
 
+              <div class="cardtri p-4 md:w-1/3">
+                <div
+                  class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden"
+                >
+                  <div class="relative">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300"
+                      src="https://banyuwangikab.go.id/media/berita/original/bcledireak_whatsapp-image-2024-07-27-at-163920.jpeg"
+                      alt="blog"
+                    />
+                    <div id="pembungkus">
+                      <p>Jakarta Pusat</p>
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <h1
+                      class="sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start"
+                    >
+                      Jejak Permainan
+                    </h1>
+
+                    <div class="flex gap-5">
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Tanggal 🗓️ <br />
+                        <span class="font-semibold text-lg">12/01/2025</span>
+                      </h3>
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Waktu ⏰ WIB <br />
+                        <span class="font-semibold text-lg">08:00-11:00 </span>
+                      </h3>
+                    </div>
+                    <p
+                      class="mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed antialiased"
+                    >
+                      Acara petualangan di luar ruangan, di mana peserta
+                      mengikuti tantangan permainan tradisional
+                    </p>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
+                    >
+                      <span
+                        class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+                      ></span>
+                      <span
+                        class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+                      ></span>
+                      <span class="relative text-[#F5EFDA]"
+                        >Daftar Sekarang!</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batas Card -->
 
               <div class="cardtri p-4 md:w-1/3">
-                  <div class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300" src="https://banyuwangikab.go.id/media/berita/original/bcledireak_whatsapp-image-2024-07-27-at-163920.jpeg" alt="blog">
-                    <div class="p-6">
-                    <h1 class=" sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start">Jejak Permainan</h1>
-                            
-                        
-                       
-                        
-                        <div class="flex gap-5">
-                        <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Tanggal 🗓️ <br> <span class="font-semibold text-lg" >12/01/2025</span></h3>
-                        <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Waktu ⏰ WIB <br> <span class="font-semibold text-lg" >08:00-11:00 </span></h3>
-                        </div>
-                        <p class=" mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed  antialiased">
-                            Acara petualangan di luar ruangan, di mana peserta mengikuti tantangan  permainan tradisional
-                        </p>
-                      </div>
-                      <div class="p-6 pt-0">
-                        <a href="#"
-                        class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA] ">
-                        <span
-                            class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736] "></span>
-                        <span
-                            class="absolute bottom-0 right-0 block w-64 h-64  mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                        <span class="relative text-[#F5EFDA]">Daftar Sekarang!</span>
-                          </span>
-                    </a>
-                      </div>
-                  </div>
-                </div>
-
-                <!-- Batas Card -->
-
-                <div class="cardtri p-4 md:w-1/3">
-                  <div class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300" src="https://banyuwangikab.go.id/media/berita/original/YD9A1200.JPG" alt="blog">
-                    <div class="p-6">
-                    <h1 class=" sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start">Bersatu Permainan</h1>
-                            
-                        
-                         
-                        
-                        <div class="flex gap-5">
-                        <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Tanggal 🗓️ <br> <span class="font-semibold text-lg" >08/03/2025</span></h3>
-                        <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Waktu ⏰ WIB <br> <span class="font-semibold text-lg" >15:00-18:00 </span></h3>
-                        </div>
-                        <p class=" mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed  antialiased">
-                            Sebuah kompetisi besar yang melibatkan berbagai permainan tradisional dalam format olimpiade.
-                        </p>
-                      </div>
-                      <div class="p-6 pt-0">
-                        <a href="#"
-                        class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA] ">
-                        <span
-                            class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736] "></span>
-                        <span
-                            class="absolute bottom-0 right-0 block w-64 h-64  mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                        <span class="relative text-[#F5EFDA]">Daftar Sekarang!</span>
-                          </span>
-                    </a>
-                      </div>
-                  </div>
-                </div>
-
-                <!-- Batas Card -->
-
-                <div class="cardtri p-4 md:w-1/3">
-                  <div class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300" src="https://kebudayaan.jogjakota.go.id/assets/instansi/kebudayaan/article/20220905112352.jpeg" alt="blog">
-                    <div class="p-6">
-                    <h1 class=" sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start">Malam Pusaka</h1>
-                            
-                        
-                       
-                        
-                        <div class="flex gap-5">
-                        <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Tanggal 🗓️ <br> <span class="font-semibold text-lg" >11/02/2025</span></h3>
-                        <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Waktu ⏰ WIB <br> <span class="font-semibold text-lg" >19:30-22:30 </span></h3>
-                        </div>
-                        <p class=" mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed  antialiased">
-                        Acara malam yang berfokus pada pengenalan permainan tradisional melalui pengalaman langsung
-                        </p>
-                      </div>
-                      <div class="p-6 pt-0">
-                        <a href="#"
-                        class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA] ">
-                        <span
-                            class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736] "></span>
-                        <span
-                            class="absolute bottom-0 right-0 block w-64 h-64  mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                        <span class="relative text-[#F5EFDA]">Daftar Sekarang!</span>
-                          </span>
-                    </a>
-                      </div>
-                  </div>
-                </div>
-
-                <!-- Batas Card -->
-
-
-                <div class="cardtri p-4 md:w-1/3">
-                    <div class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden">
-                      <img class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQURnLPhTcJaYrIY-o61FGtVRqnn88vzr3YOyeZyFLgNKxKpPHMqLMcZlfYWanhOshja8MHixcpkGN6lUC-d-NAuW_mPyNUncL0Vqwzxs15siPrycQG0Y-EFTGVY6HnXRukuQaZbLszYZ5QafS_4PWKAqbdSg8x69agycRICMIISSoKYMC7ZJ5tqq-ww9g/s594/Picture1.jpg" alt="blog">
-                      <div class="p-6">
-                        <h1 class=" sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start">Pentas Permainan</h1>
-                              
-                          
-                          
-                          <div class="flex gap-5">
-                          <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Tanggal 🗓️ <br> <span class="font-semibold text-lg" >17/04/2025</span></h3>
-                          <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Waktu ⏰ WIB <br> <span class="font-semibold text-lg" >07:00-12:00 </span></h3>
-                          </div>
-                          <p class=" mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed  antialiased">
-                            Acara ini berfokus pada pengenalan dan pelestarian permainan tradisional kepada anak-anak.
-                  </p>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <a href="#"
-                            class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA] ">
-                            <span
-                                class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736] "></span>
-                            <span
-                                class="absolute bottom-0 right-0 block w-64 h-64  mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                            <span class="relative text-[#F5EFDA]">Daftar Sekarang!</span>
-                              </span>
-                        </a>
-                        </div>
+                <div
+                  class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden"
+                >
+                  <div class="relative">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300"
+                      src="https://banyuwangikab.go.id/media/berita/original/YD9A1200.JPG"
+                      alt="blog"
+                    />
+                    <div id="pembungkus">
+                      <p>Jakarta Pusat</p>
                     </div>
                   </div>
+                  <div class="p-6">
+                    <h1
+                      class="sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start"
+                    >
+                      Bersatu Permainan
+                    </h1>
 
-                  <!-- Batas Card -->
+                    <div class="flex gap-5">
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Tanggal 🗓️ <br />
+                        <span class="font-semibold text-lg">08/03/2025</span>
+                      </h3>
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Waktu ⏰ WIB <br />
+                        <span class="font-semibold text-lg">15:00-18:00 </span>
+                      </h3>
+                    </div>
+                    <p
+                      class="mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed antialiased"
+                    >
+                      Sebuah kompetisi besar yang melibatkan berbagai permainan
+                      tradisional dalam format olimpiade.
+                    </p>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
+                    >
+                      <span
+                        class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+                      ></span>
+                      <span
+                        class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+                      ></span>
+                      <span class="relative text-[#F5EFDA]"
+                        >Daftar Sekarang!</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-                  <div class="cardtri p-4 md:w-1/3">
-                    <div class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden">
-                      <img class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh27zlVaIcr9qN5BYSSKVh5CD4ertDHK5xNWQrRQiG2KvvQdSCVBO7t7N3wrdn7cVBWjJ_nLYkRdmvasKW1ekoRxXMx_xsLsxCK6fV5fAHNThFquJfMDRmRsEl4Zsz5tHCV5IuLQoM2BY0t/s1600/1.jpg" alt="blog">
-                      <div class="p-6">
-                        <h1 class=" sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start">Kuis Pusaka</h1>
-                              
-                          
-                        
-                          
-                          <div class="flex gap-5">
-                          <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Tanggal 🗓️ <br> <span class="font-semibold text-lg" >10/05/2025</span></h3>
-                          <h3 class="mt-2 text-[#5d8736] font-medium text-sm " >Waktu ⏰ WIB <br> <span class="font-semibold text-lg" >12:00-15:00 </span></h3>
-                          </div>
-                          <p class=" mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed  antialiased">
-                            Kuis interaktif yang mengajak peserta untuk menjelajahi  sambil menguji pengetahuan mereka tentang budaya Indonesia.
-                        </p>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <a href="#"
-                            class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA] ">
-                            <span
-                                class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736] "></span>
-                            <span
-                                class="absolute bottom-0 right-0 block w-64 h-64  mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                            <span class="relative text-[#F5EFDA]">Daftar Sekarang!</span>
-                              </span>
-                        </a>
-                        </div>
+              <!-- Batas Card -->
+
+              <div class="cardtri p-4 md:w-1/3">
+                <div
+                  class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden"
+                >
+                  <div class="relative">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300"
+                      src="https://kebudayaan.jogjakota.go.id/assets/instansi/kebudayaan/article/20220905112352.jpeg"
+                      alt="blog"
+                    />
+                    <div id="pembungkus">
+                      <p>Jakarta Pusat</p>
                     </div>
                   </div>
+                  <div class="p-6">
+                    <h1
+                      class="sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start"
+                    >
+                      Malam Pusaka
+                    </h1>
 
-                
+                    <div class="flex gap-5">
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Tanggal 🗓️ <br />
+                        <span class="font-semibold text-lg">11/02/2025</span>
+                      </h3>
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Waktu ⏰ WIB <br />
+                        <span class="font-semibold text-lg">19:30-22:30 </span>
+                      </h3>
+                    </div>
+                    <p
+                      class="mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed antialiased"
+                    >
+                      Acara malam yang berfokus pada pengenalan permainan
+                      tradisional melalui pengalaman langsung
+                    </p>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
+                    >
+                      <span
+                        class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+                      ></span>
+                      <span
+                        class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+                      ></span>
+                      <span class="relative text-[#F5EFDA]"
+                        >Daftar Sekarang!</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batas Card -->
+
+              <div class="cardtri p-4 md:w-1/3">
+                <div
+                  class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden"
+                >
+                  <div class="relative">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300"
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQURnLPhTcJaYrIY-o61FGtVRqnn88vzr3YOyeZyFLgNKxKpPHMqLMcZlfYWanhOshja8MHixcpkGN6lUC-d-NAuW_mPyNUncL0Vqwzxs15siPrycQG0Y-EFTGVY6HnXRukuQaZbLszYZ5QafS_4PWKAqbdSg8x69agycRICMIISSoKYMC7ZJ5tqq-ww9g/s594/Picture1.jpg"
+                      alt="blog"
+                    />
+                    <div id="pembungkus">
+                      <p>Jakarta Pusat</p>
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <h1
+                      class="sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start"
+                    >
+                      Pentas Permainan
+                    </h1>
+
+                    <div class="flex gap-5">
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Tanggal 🗓️ <br />
+                        <span class="font-semibold text-lg">17/04/2025</span>
+                      </h3>
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Waktu ⏰ WIB <br />
+                        <span class="font-semibold text-lg">07:00-12:00 </span>
+                      </h3>
+                    </div>
+                    <p
+                      class="mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed antialiased"
+                    >
+                      Acara ini berfokus pada pengenalan dan pelestarian
+                      permainan tradisional kepada anak-anak.
+                    </p>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
+                    >
+                      <span
+                        class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+                      ></span>
+                      <span
+                        class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+                      ></span>
+                      <span class="relative text-[#F5EFDA]"
+                        >Daftar Sekarang!</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batas Card -->
+
+              <div class="cardtri p-4 md:w-1/3">
+                <div
+                  class="h-full border-2 border-[#5D8736] duration-700 bg-[#f5efda] hover:border-[#f5efda] border-opacity-60 rounded-lg overflow-hidden"
+                >
+                  <div class="relative">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center hover:scale-110 hover:brightness-110 duration-300"
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh27zlVaIcr9qN5BYSSKVh5CD4ertDHK5xNWQrRQiG2KvvQdSCVBO7t7N3wrdn7cVBWjJ_nLYkRdmvasKW1ekoRxXMx_xsLsxCK6fV5fAHNThFquJfMDRmRsEl4Zsz5tHCV5IuLQoM2BY0t/s1600/1.jpg"
+                      alt="blog"
+                    />
+                    <div id="pembungkus">
+                      <p>Jakarta Pusat</p>
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <h1
+                      class="sm:text-4xl text-4xl font-medium text-[#5D8736] pt-3 font-['Yogyakarta'] text-start"
+                    >
+                      Kuis Pusaka
+                    </h1>
+
+                    <div class="flex gap-5">
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Tanggal 🗓️ <br />
+                        <span class="font-semibold text-lg">10/05/2025</span>
+                      </h3>
+                      <h3 class="mt-2 text-[#5d8736] font-medium text-sm">
+                        Waktu ⏰ WIB <br />
+                        <span class="font-semibold text-lg">12:00-15:00 </span>
+                      </h3>
+                    </div>
+                    <p
+                      class="mt-2 text-[#5d8736] block font-sans text-sm font-medium leading-relaxed antialiased"
+                    >
+                      Kuis interaktif yang mengajak peserta untuk menjelajahi
+                      sambil menguji pengetahuan mereka tentang budaya
+                      Indonesia.
+                    </p>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
+                    >
+                      <span
+                        class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+                      ></span>
+                      <span
+                        class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+                      ></span>
+                      <span class="relative text-[#F5EFDA]"
+                        >Daftar Sekarang!</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+      </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
 </html>
