@@ -18,6 +18,7 @@ body {
   left: 50%;
   bottom: -5px;
   transition: 0.3s ease-in-out;
+  
 }
 
 .garis:hover::after {
@@ -358,13 +359,17 @@ img {
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: #F5EFDA;
+  background-color: #5D8736;
   border: none;
+  transition: 1s;
+  border-radius: 10px;
+  
 }
 
 .btn:hover {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #F5EFDA;
+  color: #5D8736;
 }
 
 .btn:focus {
