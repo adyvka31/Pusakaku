@@ -136,7 +136,6 @@ img {
 
 .card {
   width: 100%;
-  max-width: 300px;
   height: 320px;
   background-color: #333;
   overflow: hidden;
@@ -153,9 +152,7 @@ img {
   position: absolute;
   top: -20px;
   left: -20px;
-  width: 120%;
   height: 120%;
-  padding: 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
