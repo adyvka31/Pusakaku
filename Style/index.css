@@ -1,7 +1,7 @@
 @font-face 
 {
   font-family: 'Yogyakarta';
-  src: url('Font/Yogyakarta.ttf');
+  src: url('../Font/Yogyakarta.ttf');
 }
 
 body {
@@ -306,11 +306,11 @@ img {
 }
 
 .cardd:nth-child(1):before {
-  background-image: url('Image/congklak.jpg');
+  background-image: url('../Image/congklak.jpg');
 }
 
 .cardd:nth-child(2):before {
-  background-image: url('Image/layang-layang.jpg');
+  background-image: url('../Image/layang-layang.jpg');
 }
 
 .cardd:nth-child(3):before {
