@@ -1,20 +1,462 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PusakaGame</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-
-    <link rel="stylesheet" href="../Javascript/game.js" />
-    <script src="game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Kuis | PusakaKu</title>
+    <link rel="stylesheet" href="../Style/index.css" />
+    <link class="w-52" rel="icon" href="/Image/logo pusakaku.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1 id="title">GAME PUSAKA</h1>
-    <hr />
-    <br />
-    <div id="board"></div>
 
-    <br />
-    <h1 id="answer"></h1>
-  </body>
+<body class="bg-[#5D8736]">
+  <div class="container mx-auto px-4 pt-8">
+    <div class="text-center mb-14">
+      <img
+        src="../Image/art-kanan-creme.png"
+        class="max-[767px]:w-20 sm:w-36 md:w-40 absolute left-0 top-4"
+      />
+      <img
+        src="../Image/art-kiri-creme.png"
+        class="max-[767px]:w-20 sm:w-36 md:w-40 absolute right-0 top-4"
+      />
+
+      <div class="flex justify-center fadeinup2">
+        <a
+          href="index.html"
+          class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]"
+        >
+          <span
+            class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+          ></span>
+          <span
+            class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+          ></span>
+          <span class="relative text-[#F5EFDA]">Kembali</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+	<div class="max-w-xl mx-auto p-8">
+    <h1 class="sm:text-7xl text-7xl font-medium text-[#F5EFDA] font-['Yogyakarta'] text-center mb-12 fadeinup2">
+      Game Kuis</h1>
+    <div class="max-w-md mx-auto bg-[#f5efda] p-8 
+				rounded-md shadow-md">
+
+		<form id="quizForm" class="space-y-4">
+			<!-- Question 1 -->
+			<div class="flex flex-col mb-4 gap-y-5 ">
+				<label for="q1" class="text-lg font-semibold text-[#5D8736] mb-2">
+					1. Permainan tradisional yang dimainkan dengan menggunakan papan dan biji-bijian disebut?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q1a" name="q1"
+						value="a" class="mr-2" required>
+					<label for="q1a" class="text-gray-700 font-medium">
+						a) Congklak
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q1b" name="q1"
+						value="b" class="mr-2" required>
+					<label for="q1b" class="text-gray-700 font-medium">
+						b) Egrang
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q1c" name="q1"
+					value="c" class="mr-2" required>
+					<label for="q1c" class="text-gray-700 font-medium">
+						c) Gasing
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q1d" name="q1"
+					value="d" class="mr-2" required>
+					<label for="q1d" class="text-gray-700 font-medium">
+						d) Kelereng
+					</label>
+				</div>
+			</div>
+
+			<!-- Question 2 -->
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q2" class="text-lg font-semibold text-[#5D8736] mb-2">
+					2. Permainan yang mengharuskan pemainnya untuk berlari menggunakan dua papan kayu disebut?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q2a" name="q2"
+					value="a" class="mr-2" required>
+					<label for="q2a" class="text-gray-700 font-medium">
+						a) Lompat tali
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q2b" name="q2"
+					value="b" class="mr-2" required>
+					<label for="q2b" class="text-gray-700 font-medium">
+						b) Bakiak
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q2c" name="q2"
+					value="c" class="mr-2" required>
+					<label for="q2c" class="text-gray-700 font-medium">
+						c) Sepak bola
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q2d" name="q2"
+					value="d" class="mr-2" required>
+					<label for="q2d" class="text-gray-700 font-medium">
+						d) Gasing
+					</label>
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q3" class="text-lg font-semibold text-[#5D8736] mb-2">
+					3.Apa nama permainan tradisional yang menggunakan bola kecil dan dimainkan dengan cara melemparkan bola ke dalam lubang?</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q3a" name="q3"
+					value="a" class="mr-2" required>
+					<label for="q3a" class="text-gray-700 font-medium">
+						a) Gasing
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q3b" name="q3"
+					value="b" class="mr-2" required>
+					<label for="q3b" class="text-gray-700 font-medium">
+						b) Egrang
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q3c" name="q3"
+					value="c" class="mr-2" required>
+					<label for="q3c" class="text-gray-700 font-medium">
+						c) Kelereng
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q3d" name="q3"
+					value="d" class="mr-2" required>
+					<label for="q3d" class="text-gray-700 font-medium">
+						d) Layang-layang
+					</label>
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q4" class="text-lg font-semibold text-[#5D8736] mb-2">
+					4. Permainan tarik tambang melibatkan dua tim yang saling menarik tali. Apa tujuan dari permainan ini?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q4a" name="q4"
+					value="a" class="mr-2" required>
+					<label for="q4a" class="text-gray-700 font-medium">
+						a) Memasukkan bola ke dalam keranjang
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q4b" name="q4"
+					value="b" class="mr-2" required>
+					<label for="q4b" class="text-gray-700 font-medium">
+						b) Menarik tali hingga melewati garis tengah
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q4c" name="q4"
+					value="c" class="mr-2" required>
+					<label for="q4c" class="text-gray-700 font-medium">
+						c) Menjaga keseimbangan
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q4d" name="q4"
+					value="d" class="mr-2" required>
+					<label for="q4d" class="text-gray-700 font-medium">
+						d) Menghindari lawan
+					</label>
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q5" class="text-lg font-semibold text-[#5D8736] mb-2">
+					5. Permainan tradisional yang dimainkan dengan menggunakan bambu sebagai alat keseimbangan disebut?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q5a" name="q5"
+					value="a" class="mr-2" required>
+					<label for="q5a" class="text-gray-700 font-medium">
+						a) Congklak
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q5b" name="q5"
+					value="b" class="mr-2" required>
+					<label for="q5b" class="text-gray-700 font-medium">
+						b) Egrang
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q5c" name="q5"
+					value="c" class="mr-2" required>
+					<label for="q5c" class="text-gray-700 font-medium">
+						c) Layang-layang
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q5d" name="q5"
+					value="d" class="mr-2" required>
+					<label for="q5d" class="text-gray-700 font-medium">
+						d) Gasing
+					</label>
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q6" class="text-lg font-semibold text-[#5D8736] mb-2">
+					6. Permainan tradisional yang dimainkan dengan cara memutar benda berbentuk putaran disebut?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q6a" name="q6"
+					value="a" class="mr-2" required>
+					<label for="q6a" class="text-gray-700 font-medium">
+						a) Gasing
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q6b" name="q6"
+					value="b" class="mr-2" required>
+					<label for="q6b" class="text-gray-700 font-medium">
+						b) Bakiak
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q6c" name="q6"
+					value="c" class="mr-2" required>
+					<label for="q6c" class="text-gray-700 font-medium">
+						c) Lompat tali
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q6d" name="q6"
+					value="d" class="mr-2" required>
+					<label for="q6d" class="text-gray-700 font-medium">
+						d) Sepak bola
+					</label>
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q7" class="text-lg font-semibold text-[#5D8736] mb-2">
+					7. Apa nama permainan yang dimainkan dengan cara melemparkan batu kecil ke dalam lubang atau tempat tertentu?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q7a" name="q7"
+					value="a" class="mr-2" required>
+					<label for="q7a" class="text-gray-700 font-medium">
+						a) Kelereng
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q7b" name="q7"
+					value="b" class="mr-2" required>
+					<label for="q7b" class="text-gray-700 font-medium">
+						b) Congklak
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q7c" name="q7"
+					value="c" class="mr-2" required>
+					<label for="q7c" class="text-gray-700 font-medium">
+						c) Sepak bola
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q7d" name="q7"
+					value="d" class="mr-2" required>
+					<label for="q7d" class="text-gray-700 font-medium">
+						d) Lompat tali
+					</label>
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q8" class="text-lg font-semibold text-[#5D8736] mb-2">
+					8. Permainan tradisional yang menggunakan tali panjang dan dimainkan oleh sekelompok anak disebut?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q8a" name="q8"
+					value="a" class="mr-2" required>
+					<label for="q8a" class="text-gray-700 font-medium">
+						a)  Egrang
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q8b" name="q8"
+					value="b" class="mr-2" required>
+					<label for="q8b" class="text-gray-700 font-medium">
+						b) Angklung
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q8c" name="q8"
+					value="c" class="mr-2" required>
+					<label for="q8c" class="text-gray-700 font-medium">
+						c) Lompat tali
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q8d" name="q8"
+					value="d" class="mr-2" required>
+					<label for="q8d" class="text-gray-700 font-medium">
+						d) Bakiak
+					</label>
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q9" class="text-lg font-semibold text-[#5D8736] mb-2">
+					9. Di daerah manakah permainan layang-layang banyak dimainkan?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q9a" name="q9"
+					value="a" class="mr-2" required>
+					<label for="q9a" class="text-gray-700 font-medium">
+						a) Jawa Barat
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q9b" name="q9"
+					value="b" class="mr-2" required>
+					<label for="q9b" class="text-gray-700 font-medium">
+						b) Bali
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q9c" name="q9"
+					value="c" class="mr-2" required>
+					<label for="q9c" class="text-gray-700 font-medium">
+						c) Sumatra
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q9d" name="q9"
+					value="d" class="mr-2" required>
+					<label for="q9d" class="text-gray-700 font-medium">
+						d) Kalimantan
+					</label>
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-4 gap-y-5">
+				<label for="q10" class="text-lg font-semibold text-[#5D8736] mb-2">
+					10. Permainan tradisional yang melibatkan dua kelompok yang saling beradu kekuatan menarik tali disebut?
+				</label>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q10a" name="q10"
+					value="a" class="mr-2" required>
+					<label for="q10a" class="text-gray-700 font-medium">
+						a) Gasing
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q10b" name="q10"
+					value="b" class="mr-2" required>
+					<label for="q10b" class="text-gray-700 font-medium">
+						b) Tarik tambang
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q10c" name="q10"
+					value="c" class="mr-2" required>
+					<label for="q10c" class="text-gray-700 font-medium">
+						c) Sepak takraw
+					</label>
+				</div>
+				<div class="flex items-center space-x-4">
+					<input type="radio" id="q10d" name="q10"
+					value="d" class="mr-2" required>
+					<label for="q10d" class="text-gray-700 font-medium">
+						d) Congklak
+					</label>
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Navigation Buttons -->
+			<div class="flex justify-between">
+				<button type="button" onclick="prevQuestion()"
+					class="bg-[#5D8736] text-[#F5EFDA] hover:bg-[#F5EFDA] duration-700 hover:text-[#5D8736]
+						px-4 py-2 rounded-md">
+            <svg class="w-6 h-6 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+            </svg>            
+				</button>
+				<button type="button" onclick="nextQuestion()"
+						class="bg-[#5D8736] text-[#F5EFDA] hover:bg-[#F5EFDA] duration-700 hover:text-[#5D8736]
+						px-4 py-2 rounded-md">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>            
+				</button>
+			</div>
+			<hr>
+
+      <div class="">
+			<button type="button" onclick="submitQuiz()">
+      <a
+      class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]">
+      <span
+        class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+      ></span>
+      <span
+        class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+      ></span>
+      <span class="relative text-[#F5EFDA]">Kumpulkan</span>
+    </a>
+			</button>
+
+			<button type="button" onclick="restartQuiz()">
+      <a
+      class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 ring-2 ring-[#F5EFDA]">
+      <span
+        class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#5D8736] via-green-800 to-[#5D8736]"
+      ></span>
+      <span
+        class="absolute bottom-0 right-0 block w-64 h-64 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"
+      ></span>
+      <span class="relative text-[#F5EFDA]">Ulang</span>
+    </a>
+			</button>
+    </div>
+		</form>
+
+		<div id="result" class="mt-8 hidden">
+			<h2 class="text-2xl text-[#5D8736] font-bold mb-4 text-center">
+				HASIL KAMU !
+			</h2>
+			<p id="score" class="text-lg 
+								font-semibold mb-2 
+								text-center">
+			</p>
+			<p id="feedback" class="text-gray-700 text-center"></p>
+		</div>
+	</div>
+
+  <div class="flex justify-center py-10 text-center">
+    <p class=" text-[#F5EFDA] leading-6 font-serif text-xl max-w-md ">
+      Jawablah yang benar untuk memenangkan kuis!
+    </p>
+  </div>
+
+  
+
+	<script src="/Javascript/game.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
 </html>
