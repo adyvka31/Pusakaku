@@ -33,12 +33,45 @@ body {
   animation: slide-right 18s infinite linear;
 }
 
+.slide-right2{
+  animation: slide-right 18s infinite linear;
+}
+
 .slide-left{
   animation: slide-left 18s infinite linear;
 }
 
 .carousel:hover .carousel-content {
   animation-play-state: paused;
+}
+
+@media (max-width: 767px) {
+  .slide-right2{
+    animation: slide-right2 24.7s infinite linear;
+    animation-delay: 3.5s;
+  }
+
+  .slide-right{
+    animation: slide-righthp 25s infinite linear;
+  }
+
+  @keyframes slide-right2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes slide-righthp {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-195.7%);
+    }
+  }
 }
 
 .image-container:hover .overlay {
