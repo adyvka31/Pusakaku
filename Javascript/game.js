@@ -1,4 +1,4 @@
-// JavaScript Logic
+
 let currentQuestionIndex = 0;
 
 function showQuestion(index) {
@@ -31,7 +31,7 @@ function getSelectedOption(questionId) {
 }
 
 function submitQuiz() {
-	// Your quiz submission logic here
+
 	const answers = {
 		q1: getSelectedOption('q1'),
 		q2: getSelectedOption('q2'),
@@ -43,12 +43,12 @@ function submitQuiz() {
 		q8: getSelectedOption('q8'),
 		q9: getSelectedOption('q9'),
 		q10: getSelectedOption('q10'),
-		// Add more questions as needed
+
 	};
 
-	// Calculate the score based on correct answers
+
 	let score = 0;
-	// Adjust correct answers based on your questions
+
 	if (answers.q1 === 'a') {
 		score += 10;
 	}
@@ -79,19 +79,17 @@ function submitQuiz() {
 	if (answers.q10 === 'b') {
 		score += 10;
 	}
-	// Add more conditions for other questions
-
-	// Display result section
+	
 	const resultSection = document.getElementById('result');
 	resultSection.classList.remove('hidden');
 
 	const scoreElement = document.getElementById('score');
 	scoreElement.textContent = 
-		`Score: ${score}/100`; // Assuming each question has 10 points
+		`Score: ${score}/100`; 
 
 	const feedbackElement = 
 		document.getElementById('feedback');
-	// Customize feedback based on the score
+
 	if (score >= 70) {
 		feedbackElement.textContent = 
 			'Wiih Kamu Hebat Banget';
@@ -101,23 +99,21 @@ function submitQuiz() {
 	}
 }
 
-// Initially hide the result section
+
 document.getElementById('result').classList.add('hidden');
 
-// Initially show the first question
+
 showQuestion(currentQuestionIndex);
 
 function restartQuiz() {
-	// Reset question index
+
 	currentQuestionIndex = 0;
-	// Hide result section
 	document.getElementById('result').classList.add('hidden');
 
-	// Clear selected options
 	const radioButtons = 
 		document.querySelectorAll('input[type="radio"]');
 	radioButtons.forEach(button => button.checked = false);
 
-	// Show the first question
+
 	showQuestion(currentQuestionIndex);
 }
